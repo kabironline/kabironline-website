@@ -17,7 +17,7 @@ const PageTransition = ({ children }) => {
             transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
           }}
           className="h-screen w-screen fixed top-0 bg-primary pointer-events-none"
-        ></motion.div>
+        />
       </div>
 
       {children}
