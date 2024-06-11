@@ -1,3 +1,5 @@
+"use client";
+
 import { animate, motion } from "framer-motion";
 import { exit } from "process";
 
