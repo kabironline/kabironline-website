@@ -21,7 +21,10 @@ const RootLayout = ({ children }) => {
       <body className={jetbrains.variable}>
         <Header />
         <StairTransition />
-        <PageTransition>{children}</PageTransition>
+        <PageTransition>
+          <div className="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#ee5633_100%)]"></div>
+          {children}
+        </PageTransition>
       </body>
     </html>
   );
