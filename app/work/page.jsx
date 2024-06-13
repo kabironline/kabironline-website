@@ -48,14 +48,9 @@ const Work = () => {
                 {project.category} Project
               </h2>
               <p className="text-white/60">{project.description}</p>
-              <ul className="flex gap-4">
-                {project.stack.map((item, index) => (
-                  <li key={index} className="text-xl text-accent">
-                    {item.name}
-                    {index !== project.stack.length - 1 && ","}
-                  </li>
-                ))}
-              </ul>
+              <p className=" text-wrap text-xl text-accent">
+                {project.stack.join(", ")}
+              </p>
               <div className="border border-white/20"></div>
               <div className="flex items-center gap-4 ">
                 <Link href={project.github}>
@@ -109,7 +104,7 @@ const Work = () => {
               ))}
               <WorkSliderBtns
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all duration-200 rounded-full"
+                btnStyles="glass hover:bg-accent-hover text-white text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all duration-200 rounded-full"
               />
             </Swiper>
           </div>
