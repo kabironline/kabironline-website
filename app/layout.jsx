@@ -19,11 +19,13 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body className={jetbrains.variable}>
-        <Header />
+        <div className="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+        <Header className="xl:h-[10vh]" />
         <StairTransition />
         <PageTransition>
-          <div className="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
-          {children}
+          <div className="xl:h-[90vh] xl:flex block items-center justify-center">
+            {children}
+          </div>
         </PageTransition>
       </body>
     </html>

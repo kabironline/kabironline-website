@@ -6,9 +6,9 @@ import Stats from "@/components/Stats";
 
 const Home = () => {
   return (
-    <section className="h-full ">
+    <section>
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 gap-10">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer </span>
             <h1 className="h1 mb-6 leading-[1.25em] xl:leading-[1em]">

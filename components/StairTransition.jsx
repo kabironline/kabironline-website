@@ -14,7 +14,7 @@ const StairTransition = () => {
             <Stairs />
           </div>
           <motion.div // Screen fade in after animation
-            className="h-screen w-screen fixed top-0 pointer-events-none inset-0 -z-10  items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#6e1_100%)]"
+            className="h-screen w-screen fixed top-0 pointer-events-none inset-0 -z-10  items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#3D1E8E_100%)]"
             initial={{ opacity: 1 }}
             animate={{
               opacity: 0,
