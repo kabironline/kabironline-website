@@ -43,7 +43,7 @@ const Resume = () => {
                     {experience.items.map((item, index) => (
                       <li
                         key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        className="glass h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                       >
                         <span className="text-accent">{item.duration}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
@@ -70,7 +70,7 @@ const Resume = () => {
                     {education.items.map((item, index) => (
                       <li
                         key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        className="glass h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                       >
                         <span className="text-accent">{item.duration}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
@@ -97,7 +97,7 @@ const Resume = () => {
                     <li key={index}>
                       <TooltipProvider delayDuration={300}>
                         <Tooltip>
-                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] flex items-center justify-center group rounded-xl">
+                          <TooltipTrigger className="w-full h-[150px] glass flex items-center justify-center group rounded-xl">
                             <div className="text-6xl group-hover:text-accent transition-all duration-300">
                               {item.icon}
                             </div>
