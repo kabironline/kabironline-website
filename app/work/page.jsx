@@ -45,13 +45,13 @@ const Work = () => {
                 {project.num}
               </div>
               <h2 className="text-[42px] font-bold leading-none textwhite group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} Project
+                {project.title}
               </h2>
               <p className="text-white/60">{project.description}</p>
               <p className=" text-wrap text-xl text-accent">
                 {project.stack.join(", ")}
               </p>
-              <div className="border border-white/20"></div>
+              <div className="border border-white/20" />
               <div className="flex items-center gap-4 ">
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
@@ -65,7 +65,9 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                <Link href={project.github}>
+                {
+
+                  <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -77,6 +79,7 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
+                }
               </div>
             </div>
           </div>
