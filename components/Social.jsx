@@ -1,14 +1,7 @@
 // "use client";
 
+import { socials } from "@/lib/constants";
 import Link from "next/link";
-import { FaGithub, FaTwitter, FaYoutube, FaLinkedinIn } from "react-icons/fa";
-
-const socials = [
-  { icon: <FaGithub />, link: "" },
-  { icon: <FaTwitter />, link: "" },
-  { icon: <FaYoutube />, link: "" },
-  { icon: <FaLinkedinIn />, link: "" },
-];
 
 const Social = ({ iconStyles, containerStyles }) => {
   return (

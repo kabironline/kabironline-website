@@ -8,7 +8,24 @@ import { about, education, experience, skills } from "@/lib/constants";
 
 const MobileResumeTabs = () => {
   return (
-    <>
+    <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-[30px] text-center xl:text-left">
+        <h3 className="text-4xl font-bold">{about.title}</h3>
+        <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+          {about.description}
+        </p>
+        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+          {about.info.map((item, index) => (
+            <li
+              key={index}
+              className="flex items-center justify-center xl:justify-start gap-4"
+            >
+              <span className="text-white/60">{item.fieldName}</span>
+              <span className="text-xl">{item.value}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
       <div className="flex flex-col gap-[30px] text-center xl:text-left">
         <h3 className="text-4xl font-bold">{experience.title}</h3>
         <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
@@ -33,7 +50,7 @@ const MobileResumeTabs = () => {
         </ul>
       </div>
       <div className="flex flex-col gap-[30px] text-center xl:text-left">
-        <h3 className="text-4xl font-bold mt-8">{education.title}</h3>
+        <h3 className="text-4xl font-bold">{education.title}</h3>
         <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
           {education.description}
         </p>
@@ -56,9 +73,9 @@ const MobileResumeTabs = () => {
         </ul>
       </div>
       <div className="flex flex-col gap-[30px] text-center xl:text-left">
-        <h3 className="text-4xl font-bold mt-8">{skills.title}</h3>
+        <h3 className="text-4xl font-bold">{skills.title}</h3>
         <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-          {skills.description}  
+          {skills.description}
         </p>
         <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
           {skills.skillsList.map((item, index) => (
@@ -79,24 +96,7 @@ const MobileResumeTabs = () => {
           ))}
         </ul>
       </div>
-      <div className="flex flex-col gap-[30px] text-center xl:text-left">
-        <h3 className="text-4xl font-bold mt-8">{about.title}</h3>
-        <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-          {about.description}
-        </p>
-        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-          {about.info.map((item, index) => (
-            <li
-              key={index}
-              className="flex items-center justify-center xl:justify-start gap-4"
-            >
-              <span className="text-white/60">{item.fieldName}</span>
-              <span className="text-xl">{item.value}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </>
+    </div>
   );
 };
 
