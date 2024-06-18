@@ -47,7 +47,7 @@ const Work = () => {
           <div className="w-full xl:w-1/2 xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] justify-center h-full">
               <div className="text-6xl leading-none font-extrabold text-transparent text-outline hidden sm:block">
-                {} {project.title}
+                {projectNum} {project.title}
               </div>
               {/* <h2 className="text-[42px] font-bold leading-none textwhite group-hover:text-accent transition-all duration-500 capitalize"></h2> */}
               <p className="text-white/60">{project.description}</p>

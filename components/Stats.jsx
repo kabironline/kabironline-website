@@ -3,8 +3,8 @@
 import CountUp from "react-countup";
 
 const stats = [
-  { num: 3, text: "Years of Experience" },
   { num: 5, text: "Projects completed" },
+  { num: 3, text: "Years of Experience" },
   { num: 5, text: "Techonlogies mastered" },
   { num: 1085, text: "Code Commits" },
 ];
@@ -13,7 +13,7 @@ const Stats = () => {
   return (
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div className="container mx-auto">
-        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6 max-w-[80vw] mx-auto xl:max-w-none">
           {stats.map((item, index) => (
             <div
               key={index}
