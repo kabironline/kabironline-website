@@ -34,6 +34,11 @@
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
       var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     backdrop-filter: blur(20px);
+    transition: 0.2s all ease-in-out;
+    transform: scale(0.98);
+    &:hover {
+      transform: scale(1);
+    }
   }
   .glass-menu {
     /* bg-[#95959526] rounded-xl shadow-lg backdrop:blur-md */
